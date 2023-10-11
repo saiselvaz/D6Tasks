@@ -1,0 +1,21 @@
+// 1. Write a “person” class to hold all the details.
+
+class Person {
+    constructor(name, age, gender, occupation, address) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.occupation = occupation;
+        this.address = address;
+    }
+
+     getDetails() {
+        return` Name: ${this.name}, Age: ${this.age}, Gender: ${this.gender}, Occupation: ${this.occupation}, Address: ${this.address}`;
+    }
+}
+
+
+let person = new Person("Sai", 23, "Male", "Engineer", "123 Main St, Tuticorin, India");
+console.log(person.getDetails());
+
+
