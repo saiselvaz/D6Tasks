@@ -1,0 +1,21 @@
+//  2.write a class to calculate the uber price.
+
+
+class Uber {
+    constructor(distance, time) {
+        this.distance = distance;
+        this.time = time;
+    }
+
+    calculatePrice() {
+        let basePrice = 1.5;
+        let distancePrice = this.distance * 0.00002;
+        let timePrice = this.time * 0.00001;
+        let totalPrice = basePrice + distancePrice + timePrice;
+        return totalPrice.toFixed(2);
+    }
+}
+
+
+let uber = new Uber(5, 10);
+console.log(uber.calculatePrice());
